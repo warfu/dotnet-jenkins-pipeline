@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -28,6 +30,11 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            Student stu = new Student();
+            stu.ID = 1;
+            stu.Name = "张三";
+            string json1 = JsonConvert.SerializeObject(stu);
+            Console.WriteLine(json1);
         }
 
         // PUT api/values/5
