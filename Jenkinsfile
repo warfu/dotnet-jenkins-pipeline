@@ -12,7 +12,7 @@ pipeline {
         }
         stage ('shell') {
             steps {
-                sh 'sh build.sh'                
+                sh 'docker info'                
             }
         }
     }
