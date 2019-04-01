@@ -3,6 +3,8 @@
 
 set -x
 
-docker info
+#docker info
+
+docker version
 
 set +x
