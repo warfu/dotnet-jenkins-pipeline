@@ -7,8 +7,9 @@ pipeline {
     stages {
         stage ("Test") {
             steps {
-                sh 'dotnet build Solution1/src/WebApplication1/WebApplication1.csproj'
-                sh 'dotnet publish Solution1/src/WebApplication1/WebApplication1.csproj'
+               
+			    sh 'dotnet build Solution1/Solution1.sln'
+                sh 'dotnet publish -c Solution1/Solution1.sln'
             }
         }
     }
