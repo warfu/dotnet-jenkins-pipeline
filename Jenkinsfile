@@ -9,7 +9,7 @@ pipeline {
             steps {
                
 			    sh 'dotnet build Solution1/Solution1.sln'
-                sh 'dotnet publish -c Solution1/Solution1.sln'
+                sh 'dotnet publish -c Release Solution1/Solution1.sln'
             }
         }
     }
