@@ -13,7 +13,7 @@ pipeline {
         stage ('shell') {
 		    agent any
             steps {
-                sh 'docker info'                
+                sh 'sh ./build.sh'                
             }
         }
     }
