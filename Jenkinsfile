@@ -11,6 +11,7 @@ pipeline {
             }
         }
         stage ('shell') {
+		    agent any
             steps {
                 sh 'docker info'                
             }
