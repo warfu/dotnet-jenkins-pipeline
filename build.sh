@@ -13,6 +13,10 @@ cp ./Solution1/src/WebApplication1/Dockerfile  ./Solution1/src/WebApplication1/b
 
 cd ./Solution1/src/WebApplication1/bin/Release/
 
+
+
 docker build -t webapplication1:v1.0 .
+
+
 
 set +x
